@@ -2,9 +2,102 @@
 
 * {
 	box-sizing: border-box;
+	overflow: hidden;
 }
 
 body {
 	font-family: 'Poppins', sans-serif;
 	margin: 0;
+	background-image: url(./images/olga-thelavart.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-color: #e9a094;
+	min-height: 100vh;
+	background-size: 1500px 1000px;
+	background-position: center center;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+main {
+	width: 430px;
+	height: 430px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	color: #b95341;
+}
+
+h2 {
+	flex-grow: 0;
+}
+
+ul {
+	flex-grow: 2;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-content: space-around;
+	list-style: none;
+	padding: 10px;
+}
+
+label:hover {
+	color: #87ac7b;
+	font-weight: bold;
+}
+
+input[type='radio'] {
+	-webkit-appearance: none;
+	appearance: none;
+	margin: 0;
+}
+
+label {
+	font-size: 1.2rem;
+}
+
+button {
+	bottom: 0;
+	font-size: 1.3em;
+	font-weight: bold;
+	background-color: #93bd86;
+	border: none;
+	color: #f7f3f7;
+	border-radius: 5px;
+	padding: 10px;
+	margin-top: 15px;
+	box-shadow: 0 8px 2px rgba(205, 205, 209, 0.5),
+		0 4px 2px 0 rgba(161, 110, 102, 0.5);
+}
+
+button:hover {
+	background-color: #87ac7b;
+}
+
+button:active {
+	box-shadow: 0 4px rgba(178, 178, 182, 0.5);
+	transform: translateY(4px);
+}
+
+footer {
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	/* padding: 5%; */
+	height: 10px;
+	margin: 20px;
+}
+
+h6 {
+	font-size: 1rem;
+	color: #f7f1f4;
+	line-height: 1;
+}
+
+a {
+	text-decoration: none;
+	color: #cad2b6;
 }
