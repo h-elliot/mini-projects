@@ -10,26 +10,40 @@
 	</head>
 	<body>
 		<main>
-			<h2>Question text lorem ipsum?</h2>
-			<ul>
-				<li>
-					<input type="radio" id="a" class="answer" />
-					<label for="a">Answer A</label>
-				</li>
-				<li>
-					<input type="radio" id="b" class="answer" />
-					<label for="a">Answer B</label>
-				</li>
-				<li>
-					<input type="radio" id="c" class="answer" />
-					<label for="a">Answer C</label>
-				</li>
-				<li>
-					<input type="radio" id="d" class="answer" />
-					<label for="a">Answer D</label>
-				</li>
-				<button>lock it in ➫</button>
-			</ul>
+			<h2 id="q_text">Question text lorem ipsum?</h2>
+			<form class="answer_box">
+				<ul>
+					<li>
+						<input type="radio" name="answer_choices" id="a" class="answer" />
+						<label for="a" id="a_text"
+							><div class="checkmark"></div>
+							Answer A</label
+						>
+					</li>
+					<li>
+						<input type="radio" name="answer_choices" id="b" class="answer" />
+						<label for="b" id="b_text"
+							><div class="checkmark"></div>
+							Answer B</label
+						>
+					</li>
+					<li>
+						<input type="radio" name="answer_choices" id="c" class="answer" />
+						<label for="c" id="c_text"
+							><div class="checkmark"></div>
+							Answer C</label
+						>
+					</li>
+					<li>
+						<input type="radio" name="answer_choices" id="d" class="answer" />
+						<label for="d" id="d_text"
+							><div class="checkmark"></div>
+							Answer C</label
+						>
+					</li>
+					<button>lock it in ➫</button>
+				</ul>
+			</form>
 		</main>
 
 		<footer>

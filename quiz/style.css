@@ -39,6 +39,10 @@ h2 {
 	line-height: 1.5;
 }
 
+.answer_box {
+	height: 100%;
+}
+
 ul {
 	height: 100%;
 	list-style: none;
@@ -50,16 +54,45 @@ ul {
 
 label {
 	font-size: 1.2rem;
-}
-label:hover {
-	color: #87ac7b;
-	font-weight: bold;
+	vertical-align: baseline;
 }
 
-input[type='radio'] {
+label:hover {
+	text-decoration: underline;
+}
+
+li {
+	display: block;
+}
+
+.answer_box input {
 	-webkit-appearance: none;
+	-moz-appearance: none;
+	-ms-appearance: none;
+	-o-appearance: none;
 	appearance: none;
-	margin: 0;
+	position: relative;
+	height: 20px;
+	width: 20px;
+	transition: all 0.15s ease-out 0s;
+	background: #e99f947a;
+	border: none;
+	border-radius: 50%;
+	color: #fff;
+	cursor: pointer;
+	display: inline-block;
+	margin-right: 0.5rem;
+	outline: #e9a094;
+
+	vertical-align: baseline;
+}
+
+.answer_box input:hover {
+	background: #ffc8bfa9;
+}
+
+.answer_box input:checked {
+	background: #739e65;
 }
 
 button {
